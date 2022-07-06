@@ -92,14 +92,14 @@ def randomization_ui():
     s1, q1 = value_slider('slider1')
     s2, q2 = value_slider('slider2')
     
-    maxRange = q1()
-    minRange = q2()    
+    minRange = q1()
+    maxRange = q2()
     
+    cmds.textField(editable=False, text='Minimum Range')
+    min_slider = cmds.intSliderGrp(min = 1, max = 180, value = 3, step = 1, field = True)
+
     cmds.textField(editable=False, text='Maximum Range')
     max_slider = cmds.intSliderGrp(min = 1, max = 60, value = 3, step = 1, field = True)
-        
-    cmds.textField(editable=False, text='Minimum Range')
-    min_slider = cmds.intSliderGrp(min = 1, max = 60, value = 3, step = 1, field = True)  
     
         
     cmds.setParent(master_layout)
