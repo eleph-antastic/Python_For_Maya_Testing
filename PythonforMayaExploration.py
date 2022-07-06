@@ -63,8 +63,8 @@ def randomization_ui():
     cmds.button(label='Randomize Scale', command=function_wrapper(randomize_last, 'scale'))
     cmds.button(label='Randomize Scale for All Selected', command=function_wrapper(randomize_all, 'scale'))
 
-    cmds.button(label='Randomize Rotation', command=function_wrapper(randomize_last, 'rotation'))
-    cmds.button(label='Randomize Rotation for All Selected', command=function_wrapper(randomize_all, 'rotation'))
+    cmds.button(label='Randomize Rotation', command=function_wrapper(randomize_last, 'rotate'))
+    cmds.button(label='Randomize Rotation for All Selected', command=function_wrapper(randomize_all, 'rotate'))
 
     cmds.button(label='Randomize Translation', command=function_wrapper(randomize_last, 'translate'))
     cmds.button(label='Randomize Translation for All Selected', command=function_wrapper(randomize_all, 'translate'))
